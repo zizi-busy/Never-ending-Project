@@ -7,9 +7,9 @@
 module.exports = {
   siteMetadata: {
     title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    description: "This is Zizi's Portfolio Site",
+    author: "@zizi",
+    twitterUsername: "@zizi",
     image: "/twitter-img.png",
     siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
   },
@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,12 +38,12 @@ module.exports = {
         singleTypes: [],
       },
     },
-    // {
+/*     // {
     //   resolve: `gatsby-plugin-prefetch-google-fonts`,
     //   options: {
     //     fonts: [
     //       {
-    //         family: `Roboto`,
+    //         family: `Popins`,
     //         variants: [`400`, `700`],
     //       },
     //       {
@@ -50,6 +51,6 @@ module.exports = {
     //       },
     //     ],
     //   },
-    // },
+    // }, */
   ],
 }

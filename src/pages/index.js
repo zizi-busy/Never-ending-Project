@@ -6,7 +6,28 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
-export default () => {
-  return <h2>index page</h2>
+import Info from "../components/Info"
+
+
+export const query = graphql`
+  query {
+    infoImage: file(relativePath: { eq: "bg-1.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+    `
+
+export default ({ data }) => {
+  return <Layout>
+  <Hero/>
+<Info  className="info-background"
+ img={data.infoImage.childImageSharp.fluid} />
+ <Services/>
+</Layout>
+  
 }
 // ...GatsbyImageSharpFluid

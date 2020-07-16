@@ -1,5 +1,5 @@
 import React from "react"
-import Title from "./Title"
+import SectionTitle from "./SectionTitle"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"

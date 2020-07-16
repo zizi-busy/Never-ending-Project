@@ -1,5 +1,5 @@
 import React from "react"
-import Title from "./Title"
+import SectionTitle from "./SectionTitle"
 import Blog from "./Blog"
 import { Link } from "gatsby"
 export const Blogs = () => {

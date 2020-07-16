@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Title from "../components/Title"
+import SectionTitle from "../components/SectionTitle"
 import Image from "gatsby-image"
 // ...GatsbyImageSharpFluid
 const About = () => {
