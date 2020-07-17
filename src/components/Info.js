@@ -9,19 +9,18 @@ const Info = ({ img, className, children }) => {
 					<div className="col">
 						<h4 className="pre-title">About me</h4>
 
-						<h2 className="text-large">A product designer focusing on mobile app interactive experiences</h2>
+						<h2 className="text-large">A junior web developer focusing on front-end interactive experiences</h2>
 					</div>
 					<div className="col">
 						<h4 className="pre-title">What I do best</h4>
 						<p className="text-medium">
-							Hungry, ambitious, and loves to give back by openly sharing his process. Currently, Creative
-							Director at DJVWB where Yoneth Asmara envisions and conceptualizes digital products for
-							clients like Tinder, Boosted Boards, Lufthansa, and Flip.
+							Hungry, ambitious, and loves to give back by openly sharing her learning process. Currently, Junior Web-developer at Integrify where  she envisions and conceptualizes digital products for
+							clients.
 						</p>
 					</div>
 				</div>
 			</div>
-			{children}
+		
 		</BackgroundImage>
 	);
 };

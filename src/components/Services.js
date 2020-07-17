@@ -1,10 +1,12 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
+import BackgroundImage from 'gatsby-background-image';
 import services from '../constants/services';
 
-const Services = () => {
+const Services = ({ img, className, children }) => {
 	return (
-		<div className=" section bg-grey ">
+    <BackgroundImage className={className} fluid={img}>
+		<div className=" section ">
 			<div className="section-center">
 				<SectionTitle
 					className="service-title"
@@ -29,6 +31,8 @@ const Services = () => {
            </div>
            </div>
            </div>
+           		{children}
+		</BackgroundImage>
 	);
 };
 

@@ -34,7 +34,7 @@ module.exports = {
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [],
+        contentTypes: [`projects`],
         singleTypes: [],
       },
     },
@@ -43,7 +43,7 @@ module.exports = {
     //   options: {
     //     fonts: [
     //       {
-    //         family: `Popins`,
+    //         family: `Poppins`,
     //         variants: [`400`, `700`],
     //       },
     //       {
