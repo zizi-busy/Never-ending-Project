@@ -9,7 +9,7 @@ const Services = ({ img, className, children }) => {
 		<div className=" section ">
 			<div className="section-center">
 				<SectionTitle
-					className="service-title"
+					className="title-left"
 					pretitle="What I love"
 					title="My services"
 					subtitle="Lipsum.com provides a detailed explanation of what lorem ipsum is, where it comes from"

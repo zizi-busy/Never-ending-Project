@@ -1,26 +1,27 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Projects from "../components/Projects"
+import Apps from "../components/Applications"
 import SEO from "../components/SEO"
 
-const ProjectsPage = ({
+const ApplicationsPage = ({
   data: {
-    allStrapiProjects: { nodes: projects },
+    allStrapiApps: { nodes: apps },
   },
 }) => {
   return (
     <Layout>
-      <SEO title="Projects" />
-      <section className="projects-page">
-        <Projects projects={projects} className="title-left" title="All projects" pretitle="My projects" />
+      <SEO title="Applications" />
+      <section className="apps-page">
+        <Apps apps={apps} pretitle ="My applications"
+         className="title-center" title="All applications" />
       </section>
     </Layout>
   )
 }
 export const query = graphql`
   {
-    allStrapiProjects {
+    allStrapiApps {
       nodes {
         github
         id
@@ -43,4 +44,4 @@ export const query = graphql`
   }
 `
 
-export default ProjectsPage
+export default ApplicationsPage
